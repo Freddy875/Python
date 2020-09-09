@@ -92,3 +92,20 @@ Resultado1 = 3**3 * (13/5 - (2 * 4))
 
 print(Resultado1)
 
+#División excata
+
+Num1 = 2
+Num2 = 5
+
+
+DivisionExacta = Num2//Num1
+
+print("El resultado cerrado de dividir",Num2, " / ", Num1, " = ", DivisionExacta)
+
+mensaje = """Esto es un mensaje 
+    con tres saltos
+    de linea"""
+
+print(mensaje)
+
+
