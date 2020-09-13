@@ -106,14 +106,15 @@ print(3 in lista8)
 
 print(10 in lista8)
 
-#Saber el indice en el que se encuentra cierto elemento 
+#Conocer el indice en el que se encuentra cierto elemento 
 #con el metodo index
-#Si devuleve un valor que no existe en la lista 
-#genera un error de excepcion 
 
 print(lista8.index(5))
 
 #print(lista8.index(10))
+#Si devuleve un valor que no existe en la lista 
+#genera un error de excepcion 
+
 
 #Una lista puede tener elementos repetidos 
 
