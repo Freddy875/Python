@@ -3,7 +3,7 @@ Listas
 Son parecidad a los arreglos o vectores
 Estructuras de datos mas flexibles
 Podemos almacenamos 
-valores numericos, cadenas, bolleanos 
+valores numericos, cadenas, booleanos 
 e inclusive otroas listas
 '''
 

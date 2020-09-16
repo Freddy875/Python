@@ -1,5 +1,5 @@
 #Tuplas 
-#Las tuplas son colecciones de dataso
+#Las tuplas son colecciones de datos
 #Parecidos a las listas 
 #Solo que las tuplas son inmutables
 #Es decir no podemos modificar las tuplas 
