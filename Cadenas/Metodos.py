@@ -31,3 +31,16 @@ texto = "Me encentan las manzanas, las manzanas son mi fruta favorita"
 x = texto.count("manzanas",10,24)
 print(x)
 
+#Devuevle una version codificada de la cadena
+texto = "Mi nombre es Fernando Sánchez Mejía"
+x = texto.encode()
+print(x)
+
+print(texto.encode(encoding="ascii",errors="backslashreplace"))
+print(texto.encode(encoding="ascii",errors="ignore"))
+print(texto.encode(encoding="ascii",errors="namereplace"))
+print(texto.encode(encoding="ascii",errors="replace"))
+print(texto.encode(encoding="ascii",errors="xmlcharrefreplace"))
+
+texto = "Fernando S\xc3\xa1nchez Mej\xc3\xada"
+print(texto)
