@@ -1,5 +1,4 @@
 #Convierte el primer caracter a mayuscula
-
 texto = "hola, y  bienvenido a mi mundo."
 x = texto.capitalize()
 print(x)
@@ -44,3 +43,18 @@ print(texto.encode(encoding="ascii",errors="xmlcharrefreplace"))
 
 texto = "Fernando S\xc3\xa1nchez Mej\xc3\xada"
 print(texto)
+
+#Devuelve verdadero si una cadena termina con un especifico valor 
+
+texto = "Hola, Bienvenido a mi mundo."
+print(texto)
+x = texto.endswith(".")
+print(x)
+
+texto = "Hola, Bienvenido a mi mundo."
+x = texto.endswith("mi mundo.")
+print(x)
+
+texto = "Hola, Bienvenido a mi mundo."
+x = texto.endswith("mi mundo.",5,11)
+print(x)
