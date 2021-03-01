@@ -104,6 +104,282 @@ print(texto)
 texto = "Mi nombre es {}, Tengo {} anios".format("Freddy",24)
 print(texto)
 
+#Index
+'''
+Busca una cadena de un especifico valor y devuelve 
+la posición de donde encontrarlo
+'''
+
+texto = "Hola, Bienvenido a mi mundo"
+
+x = texto.index("Bienvenido")
+
+print(x)
+
+#Encontrar la primera e
+
+texto = "Hola, Bienvenido a mi mundo"
+
+x = texto.index("e")
+
+print(x)
+
+#Entre un rango
+
+texto = "Hola, Bienvenido a mi mundo"
+
+x = texto.index("e",5,10)
+
+print(x)
+
+'''
+Si el valor no es encontrado, el metodo find()
+devuelve un -1 pero con un metodo index()
+devuelve una excepcion
+'''
+texto = "Hola, Bienvenido a mi mundo"
+
+print(texto.find("q"))
+#print(texto.index("q"))
+
+#isalnum() Devuelve True si todos los caracteres en la cadena son alfanumericos
+
+#Primer ejemplo es True
+
+texto = "CompanyX"
+
+x = texto.isalnum()
+
+print(x)
+
+#Segundo ejemplo es False
+
+texto = "Company10"
+
+x = texto.isalnum()
+
+print(x)
+
+#sialpha
+
+'''
+Devuelve true si todos los caracteres en la cadena son alfabeticos
+'''
+
+#Primer ejemplo es True
+
+texto = "CompanyX"
+
+x = texto.isalpha()
+
+print(x)
+
+#Segundo ejemplo es False
+
+texto = "Company10"
+
+x = texto.isalpha()
+
+print(x)
+
+#isdecilam 
+
+'''
+Devuelve True si todos los caracteres en la cadena son decimales
+'''
+
+texto = "\u0033" #Unicode for 3
+
+x = texto.isdecimal()
+
+print(x)
+
+a = "\u0030" #unicode para 0
+b = "\u0047" #unicdoe para G
+
+print(a.isdecimal())
+print(b.isdecimal())
+
+#isdigit()
+
+'''
+Devuelve True si todos los caracteres en la cadena son decimales
+'''
+texto = "50800" #Unicode for 3
+
+x = texto.isdigit()
+
+print(x)
+
+a = "\u0030" #unicode for 0
+b = "\u00B2" #unicode for ²
+
+print(a.isdigit())
+print(b.isdigit())
+
+#isdentifier
+
+'''
+Devuelve True si la cadena es un identificador
+Una cadena es conciderada un identificador valido
+si solo contiene letras alfanumericas (a-z) y (0-9),
+o guiones bajo (_).
+Un identificador valido no puede comenzar con un numero
+ni conteenr espacios 
+'''
+
+texto = "Demo"
+
+x = texto.isidentifier()
+
+print(x)
+
+a = "MiCarpeta"
+b = "Demo002"
+c = "2Traer"
+d = "mi demo"
+
+print(a.isidentifier())
+print(b.isidentifier())
+print(c.isidentifier())
+print(d.isidentifier())
+
+#islower
+'''
+Devuelve True si todos los caracteres
+en la cadena esta en minusculas
+'''
+
+texto = "hola mundo"
+
+x = texto.islower()
+
+print("Es minuscula")
+
+print(x)
+
+a = "Hola mundo"
+b = "hola 123"
+c = "minombre_esFreddy"
+
+print(a.islower())
+print(b.islower())
+print(c.islower())
+
+#isnumeric
+
+'''
+Devuelve True si todos los caracteres en la cadena son numericos
+'''
+
+print("Es numerico")
+
+texto = "565543"
+
+x = texto.isnumeric()
+
+print(x)
+
+a = "\u0030" #unicode for 0
+b = "\u00B2" #unicode for ²
+c = "10km2"
+d = "-1"
+e = "1.5"
+
+print(a.isnumeric())
+print(b.isnumeric())
+print(c.isnumeric())
+print(d.isnumeric())
+print(e.isnumeric())
+
+#isprintable
+
+'''
+Devuelve True si todos los caracteres en la cadena son imprimibles
+'''
+
+texto = "!Hola¡ ¿Tu eres el #1?"
+
+x = texto.isprintable()
+
+print("Es imprimible")
+
+print(x)
+
+texto = "!Hola¡\n ¿Tu eres el #1?"
+
+x = texto.isprintable()
+
+print(x)
+
+#isspace
+
+'''
+Devuelve True si todos los caracteres en la cadena son espacios en blanco
+'''
+
+texto = "   "
+
+x = texto.isspace()
+
+print("Es un espacio en blanco")
+
+print(x)
+
+texto = "  s  "
+
+x = texto.isspace()
+
+print(x)
+
+#istitle
+
+'''
+Devuelve true si la cadena sigue las reglas de un titulo
+es decir si las primera letra de la cadena inicia con
+mayuscula y todas las demas con minusculas
+'''
+
+print("Es un titulo")
+
+texto = "Hola, A Bienvenido A Mi Mundo"
+
+x = texto.istitle()
+
+print(x)
+
+a = "HOLA, Y BIENVENIDO A MI MUNDO"
+b = "Hola"
+c = "22 Nombres"
+d = "Esto es %'!?"
+
+print(a.istitle())
+print(b.istitle())
+print(c.istitle())
+print(d.istitle())
+
+#isupper
+
+'''
+Devuelve True si todos los caracteres en la cadena son mayusculas
+'''
+
+print("Es mayuscula")
+
+texto = "ESTO ES AHORA"
+
+x = texto.isupper()
+
+print(x)
+
+a = "Hola Mundo"
+b = "hola 123"
+c = "MI NOMBRE ES FREDDY"
+
+print(a.isupper())
+print(b.isupper())
+print(c.isupper())
+
 
 
 
