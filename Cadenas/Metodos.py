@@ -380,6 +380,126 @@ print(a.isupper())
 print(b.isupper())
 print(c.isupper())
 
+#Join 
+
+'''
+Unir elementos de un iterable al fin de una cadena
+'''
+
+print("Join")
+
+miTupla = ("John","Peter","Vicky")
+
+x = "#".join(miTupla)
+
+print(x)
+
+myDict = {"name":"John","country":"Norway"}
+mySeparator = "TEST"
+
+x = mySeparator.join(myDict)
+
+print(x)
+
+#ljust
+
+'''
+Devuelve la cadena justificada a la derecha
+'''
+
+print("ljust")
+
+texto = "El mango"
+
+x = texto.ljust(20)
+
+print(x,"es mi fruta favorita")
+
+texto = "El mango"
+
+x = texto.ljust(20,"O")
+
+print(x,"es mi fruta favorita")
+
+#lower
+
+print("minusculas")
+
+#Convierte una cadena en minusculas
+
+texto = "Hola mis AMIGOS"
+
+x = texto.lower()
+
+print(x)
+
+#lstrip
+
+#Devuelve una versión recortada a la izquierda de la cadena.
+
+texto = "   mango   "
+
+x = texto.lstrip()
+
+print("De todas las furta el " , x, "es mi fruta favorita")
+
+texto = ",,,,,ssaaww.....banana"
+
+x = texto.lstrip(",.saw")
+
+print(x)
+
+#maketrnas()
+
+#Devuelve una tabla de traducción que se utilizará en las traducciones.
+
+print("maketrans")
+
+texto = "Hola, Sam"
+
+miTabla = texto.maketrans("S","P")
+
+print(texto.translate(miTabla))
+
+texto = "Hola, Sam"
+
+x = "mSa"
+y = "eJo"
+
+miTabla = texto.maketrans(x,y)
+
+print(texto.translate(miTabla))
+
+texto = "Buenas noches, Sam"
+
+x = "mSa"
+y = "eJo"
+z = "noches"
+
+print(texto.maketrans(x,y,z))
+
+#Particion 
+
+#Devuelve una tupla donde la cadena se divide en tres partes
+
+texto = "Yo podria comer mango todo el dia"
+
+x = texto.partition("mango")
+
+print(x)
+
+texto = "Yo podria comer mango todo el dia"
+
+x = texto.partition("manzana")
+
+print(x)
+
+
+
+
+
+
+
 
 
 
