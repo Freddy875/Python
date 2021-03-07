@@ -494,6 +494,277 @@ x = texto.partition("manzana")
 
 print(x)
 
+#replace 
+# Devuelve una cadena donde un valor especifico es reemplazado con un valor especifico
+
+texto = "Me gustan las manzanas"
+
+x = texto.replace("manzanas","bananas")
+
+print(x)
+
+texto = "uno uno era la carrera de caballos, dos a dos eran tres tambien"
+
+x = texto.replace("uno","tres")
+
+print(x)
+
+texto = "uno uno era la carrera de caballos, dos a dos eran tres tambien"
+
+x = texto.replace("uno","tres",2)
+
+print(x)
+
+#rfind 
+#Busca la cadena para un especifico valor y devuelve la ultima posicion donde fue encontrada
+
+texto = "Mi casa, su casa."
+
+x = texto.rfind("casa")
+
+print(x)
+
+texto = "Mi casa, su casa."
+
+x = texto.rfind("a")
+
+print(x)
+
+#Entre un rango 
+
+texto = "Mi casa, su casa."
+
+x = texto.rfind("a",3,6)
+
+print(x)
+
+texto = "Mi casa, su casa."
+
+#rfind vs rindex
+print(texto.rfind("q"))
+#print(texto.rindex("q"))
+
+#rindex
+#Busca la cadena para un especifico valor y devuelve la ultima posicion donde fue encontrada
+
+texto = "Mi casa, su casa."
+
+x = texto.rindex("casa")
+
+print(x)
+
+#Entre un rango 
+
+texto = "Mi casa, su casa."
+
+x = texto.rindex("a",3,6)
+
+print(x)
+
+#rfind vs rindex
+print(texto.rfind("q"))
+#print(texto.rindex("q"))
+
+#rjust
+#Devuelve una versión justificada a la derecha de la cadena 
+
+texto = "Mango"
+
+x = texto.rjust(20)
+
+print(x," is mi fruta favorita")
+
+texto = "Mango"
+
+x = texto.rjust(20,"O")
+
+print(x," is mi fruta favorita")
+
+#rpartition
+#Devuelve una tupla donde la cadena esta partida en 3 partas
+
+texto = "El Mango es mi fruta favorita, Yo podria comerlo todo el dia"
+
+x = texto.rpartition("favorita")
+
+print(x)
+
+texto = "El Mango es mi fruta favorita, Yo podria comerlo todo el dia"
+
+x = texto.rpartition("manzana")
+
+print(x)
+
+#rsplit 
+#Divide la cadena en especificos separadores, y devuelve una lista
+
+texto = "mango, manzana, cereza"
+
+x = texto.rsplit(",")
+
+print(x)
+
+texto = "mango, manzana, cereza"
+
+x = texto.rsplit(",",1)
+
+print(x)
+
+#rstip 
+#Devuelve una versión recordada a la derecha de la cadena 
+
+texto = "      mango       "
+
+x = texto.rstrip()
+
+print("De todas las futas ", x, " es mi favorita")
+
+texto = "mango,,,,,ssqqqww....."
+
+x = texto.rstrip(",.qsw")
+
+print(x)
+
+#split
+#Divide la cadena en especificos separadores, y devuelve una lista
+
+texto = "Bienvenido a la jungla "
+
+x = texto.split()
+
+print(x)
+
+texto = "Hola, mi nombre es Freddy, tengo 24 anios de edad"
+
+x = texto.split(",")
+
+print(x)
+
+texto = "manzana#cereza#naranja"
+
+x = texto.split("#")
+
+print(x)
+
+texto = "manzana#cereza#naranja"
+
+x = texto.split("#",1)
+
+print(x)
+
+#splitlines
+#Divide la cadena en saltos de linea y devuelve una lista
+
+texto = "Gracias por la musica\n Bienvenido a la jungla"
+
+x = texto.splitlines()
+
+print(x)
+
+
+texto = "Gracias por la musica\n Bienvenido a la jungla"
+
+x = texto.splitlines(True)
+
+print(x)
+
+#startswitch 
+#Devuelve verdadero si la cadena empieza con un valor especifico
+
+texto = "Hola, Bienvenido a mi mundo"
+
+x = texto.startswith("Hola")
+
+print(x)
+
+texto = "Hola, Bienvenido a mi mundo"
+
+x = texto.startswith("Bien",6,12)
+
+print(x)
+
+#strip 
+#Devuelve una version recortada de la cadena 
+
+texto = "      mango       "
+
+x = texto.strip()
+
+print("De todas las futas ", x, " es mi favorita")
+
+texto = ",,,,,rrttgg.....mango....rrr"
+
+x = texto.strip(",.grt")
+
+print("De todas las futas ", x, " es mi favorita")
+
+#swapcase 
+#Intercambia mayúsculas y minúsculas, y viceversa.
+
+texto = "Hola Mi Nombres Es Freddy"
+
+x = texto.swapcase()
+
+print(x)
+
+#title 
+#Convierte el primer caracter de cada palabra en mayusculas
+
+texto = "Bienvenido a mi mundo"
+
+x = texto.title()
+
+print(x)
+
+txt = "hola b2b2b2 and 5g5g5g"
+
+x = txt.title()
+
+print(x)
+
+#traslate
+#Devuelve la traducción de la cadena 
+
+#Usamos el diccionario con codigos ASCII para remplazar 83(S) con 80(P):
+miDiccionario = {83:80}
+
+texto = "Hola Sam"
+
+print(texto.translate(miDiccionario))
+
+texto = "Hola Sam"
+
+miTabla = texto.maketrans("S","P")
+
+print(texto.translate(miTabla))
+
+#upper()
+#Convierte una cadena a mayusculas
+
+texto = "Hola mis amigos"
+
+x = texto.upper()
+
+print(x)
+
+#zfill
+#Rellena la cadena con un numero especificado de valores 0 al principio 
+
+texto = "50"
+
+x = texto.zfill(10)
+
+print(x)
+
+a = "hola"
+b = "bienvenido a la jungla"
+c = "10.000"
+
+print(a.zfill(10))
+print(b.zfill(10))
+print(c.zfill(10))
+
+
 
 
 
