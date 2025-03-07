@@ -43,3 +43,26 @@ mi_dic["pais"] = "Colombia"
 
 # Mostrar el diccionario actualizado
 print(mi_dic)
+
+
+---
+
+# Lista de valores originales
+valores = [1, 2, 3, 4, 5, 6, 9.5]
+
+# Generar una nueva lista con los valores elevados al cuadrado usando comprensión de listas
+valores_cuadrado = [x**2 for x in valores]
+
+# Imprimir el resultado
+print(valores_cuadrado)
+
+---
+
+# Lista de valores originales
+valores = [1, 2, 3, 4, 5, 6, 9.5]
+
+# Generar una nueva lista con los valores pares usando comprensión de listas
+valores_pares = [x for x in valores if isinstance(x, int) and x % 2 == 0]
+
+# Imprimir el resultado
+print(valores_pares)
